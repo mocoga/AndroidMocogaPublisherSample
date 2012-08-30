@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout 
+        android:id="@+id/View1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:orientation="vertical">
+	        <TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="25dip"
+				android:gravity="center"
+				android:textColor="#ff000000"
+				android:text="@string/title"/>
+	        
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dip"
+	            android:textSize="15dip"
+	            android:textColor="#ff000000"
+	            android:lineSpacingExtra="2dip"
+	            android:text="@string/desc1"/>
+	        
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dip"
+	            android:textSize="15dip"
+	            android:textColor="#ff000000"
+	            android:text="@string/contact"
+	            android:autoLink="all"/>
+	        
+	        <View
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dip"
+	            android:layout_weight="1"/>
+	        
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="150dip"
+	            android:layout_marginBottom="10dip"
+	            android:textSize="15dip"
+	            android:textColor="#ffff0000"
+	            android:gravity="center"
+	            android:text="@string/icon_desc"/>
+	        
+	    </LinearLayout>
+        
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:background="#ffaaaaaa">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15dip"
+                android:textColor="#ff000000"
+                android:text="@string/reward"/>
+            
+            <TextView
+                android:id="@+id/Currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="15dip"
+                android:textColor="#ff000000"
+                android:text="0"/>
+            
+            <ProgressBar 
+                android:id="@+id/Indicator"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginRight="5dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/Currency"
+                android:visibility="gone"/>
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/View2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:orientation="vertical">
+	        <TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="25dip"
+				android:gravity="center"
+				android:textColor="#ff000000"
+				android:text="@string/title"/>
+	        
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dip"
+	            android:textSize="15dip"
+	            android:textColor="#ff000000"
+	            android:lineSpacingExtra="2dip"
+	            android:text="@string/desc1"/>
+	        
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dip"
+	            android:textSize="15dip"
+	            android:textColor="#ff000000"
+	            android:text="@string/contact"
+	            android:autoLink="all"/>
+	        
+	        <View
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dip"
+	            android:layout_weight="1"/>
+	        
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dip"
+	            android:layout_marginRight="150dip"
+	            android:layout_marginBottom="10dip"
+	            android:textSize="15dip"
+	            android:textColor="#ffff0000"
+	            android:gravity="center"
+	            android:text="@string/icon_desc"/>
+	        
+	    </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/View3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:orientation="vertical">
+	        <TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="25dip"
+				android:gravity="center"
+				android:textColor="#ff000000"
+				android:text="@string/title"/>
+	        
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dip"
+	            android:textSize="15dip"
+	            android:textColor="#ff000000"
+	            android:lineSpacingExtra="2dip"
+	            android:text="@string/desc1"/>
+	        
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dip"
+	            android:textSize="15dip"
+	            android:textColor="#ff000000"
+	            android:text="@string/contact"
+	            android:autoLink="all"/>
+	        
+	        <View
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dip"
+	            android:layout_weight="1"/>
+	        
+	        
+	    </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/View4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:orientation="vertical">
+	        <TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="25dip"
+				android:gravity="center"
+				android:textColor="#ff000000"
+				android:text="@string/title"/>
+	        
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dip"
+	            android:textSize="15dip"
+	            android:textColor="#ff000000"
+	            android:lineSpacingExtra="2dip"
+	            android:text="@string/desc1"/>
+	        
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dip"
+	            android:textSize="15dip"
+	            android:textColor="#ff000000"
+	            android:text="@string/contact"
+	            android:autoLink="all"/>
+	        
+	        <View
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dip"
+	            android:layout_weight="1"/>
+	    
+	        <SeekBar 
+	            android:id="@+id/SizeBar"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dip"
+	            android:layout_marginRight="20dip"
+	            android:layout_marginBottom="10dip"
+	            android:paddingLeft="10dip"
+	            android:paddingRight="10dip"
+	            android:max="100"
+	            android:progress="40"/>
+	        
+	    </LinearLayout>
+	    
+    </LinearLayout>
+    
+ 
+</FrameLayout>

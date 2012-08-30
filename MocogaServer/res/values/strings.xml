@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MocogaServerActivity!</string>
+    <string name="app_name">MocogaServer</string>
+
+    <string name="title">Sample Project for Publisher</string>
+    <string name="desc1">- 퍼블리셔 SDK Integration의 이해를 돕고자 제공되는 샘플 프로젝트입니다.\n- 가상화폐를 클라이언트에서 관리하는 퍼블리셔를 대상으로 합니다.</string>
+    <string name="contact">문의메일은 help@mocoga.com</string>
+    <string name="icon_desc">OfferCon 사이즈는 Large/Normal/Small 중 선택할 수 있습니다.</string>
+    <string name="reward">지급 받은 총 보상 금액 : </string>
+    <string name="icon_desc2">OfferCon은 원하는 화면과 위치에 자유롭게 배치할 수 있습니다.</string>
+</resources>
