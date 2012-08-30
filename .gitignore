@@ -1,0 +1,12 @@
+
+MocogaClient/.classpath
+
+MocogaServer/.classpath
+
+MocogaClient/bin/
+
+MocogaClient/gen/
+
+MocogaServer/bin/
+
+MocogaServer/gen/
