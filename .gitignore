@@ -10,3 +10,5 @@ MocogaClient/gen/
 MocogaServer/bin/
 
 MocogaServer/gen/
+
+MocogaServer/.DS_Store
