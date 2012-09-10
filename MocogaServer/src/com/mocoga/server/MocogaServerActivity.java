@@ -173,7 +173,7 @@ public class MocogaServerActivity extends TabActivity {
     protected void onPause() {
     	
     	// OfferCon을 숨깁니다.
-    	Mocoga.getInstance().hideOfferIcon();
+    	Mocoga.getInstance().hideOfferCon();
     	
     	super.onPause();
     }
@@ -203,19 +203,19 @@ public class MocogaServerActivity extends TabActivity {
 		 */
     	
     	if(tag.equals("tab1")) {
-			Mocoga.getInstance().hideOfferIcon();
+			Mocoga.getInstance().hideOfferCon();
 			Mocoga.getInstance().showOfferCon(MocogaServerActivity.this, 70, 80, Mocoga.OFFER_ICON_LARGE, TypedValue.COMPLEX_UNIT_DIP, Mocoga.ICON_ALIGN_LEFT_BOTTOM);
 		}
 		else if(tag.equals("tab2")) {
-			Mocoga.getInstance().hideOfferIcon();
+			Mocoga.getInstance().hideOfferCon();
 			Mocoga.getInstance().showOfferCon(MocogaServerActivity.this, 70, 80, Mocoga.OFFER_ICON_NORMAL, TypedValue.COMPLEX_UNIT_DIP, Mocoga.ICON_ALIGN_RIGHT_BOTTOM);
 		}
 		else if(tag.equals("tab3")) {
-			Mocoga.getInstance().hideOfferIcon();
+			Mocoga.getInstance().hideOfferCon();
 			Mocoga.getInstance().showOfferCon(MocogaServerActivity.this, 160, 160, Mocoga.OFFER_ICON_SMALL, TypedValue.COMPLEX_UNIT_DIP, Mocoga.ICON_ALIGN_LEFT_BOTTOM);
 		}
 		else if(tag.equals("tab4")) {
-			Mocoga.getInstance().hideOfferIcon();
+			Mocoga.getInstance().hideOfferCon();
 			Mocoga.getInstance().showOfferCon(MocogaServerActivity.this, 160, 160, offerConSize, TypedValue.COMPLEX_UNIT_DIP, Mocoga.ICON_ALIGN_LEFT_BOTTOM);
 		}
     	

@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.widget.SeekBar;
@@ -17,7 +18,7 @@ import com.mocoga.sdk.Mocoga.MocogaListener;
 import com.mocoga.sdk.datatype.Reward;
 
 public class MocogaClientActivity extends TabActivity {
-    
+    private static final String TAG = MocogaClientActivity.class.getSimpleName();
 	
 	private int offerConSize = 60;
 	
@@ -102,7 +103,10 @@ public class MocogaClientActivity extends TabActivity {
 	   	 * - 주의! 현재 샘플 앱의 AppID와 SecretKey는 테스트용이므로, 실제 사용하려는 AppID와 SecretKey를 추가해주시기 바랍니다.
 	   	 */
         Mocoga.getInstance().initAppID(getApplicationContext(), "b94780b0-1212-49ad-be7b-35ea4d989a63", "4A8QhZZuFi0ezA==");
+        //Mocoga.getInstance().initAppID(getApplicationContext(), "ba873ce1-19bb-489a-a56e-8fb8bb1715de", "6kcuetqiPmJVag==");
         
+        
+        Log.i(TAG, "Device ID : " + Mocoga.getInstance().getDeviceId());
         
         /*
 		 * << 가상화폐 관리 방식 >>
@@ -141,7 +145,7 @@ public class MocogaClientActivity extends TabActivity {
     protected void onPause() {
     	
     	// OfferCon을 숨깁니다.
-    	Mocoga.getInstance().hideOfferIcon();
+    	Mocoga.getInstance().hideOfferCon();
     	
     	super.onPause();
     }
@@ -172,19 +176,19 @@ public class MocogaClientActivity extends TabActivity {
     	
     	
     	if(tag.equals("tab1")) {
-			Mocoga.getInstance().hideOfferIcon();
+			Mocoga.getInstance().hideOfferCon();
 			Mocoga.getInstance().showOfferCon(MocogaClientActivity.this, 70, 80, Mocoga.OFFER_ICON_LARGE, TypedValue.COMPLEX_UNIT_DIP, Mocoga.ICON_ALIGN_LEFT_BOTTOM);
 		}
 		else if(tag.equals("tab2")) {
-			Mocoga.getInstance().hideOfferIcon();
+			Mocoga.getInstance().hideOfferCon();
 			Mocoga.getInstance().showOfferCon(MocogaClientActivity.this, 70, 80, Mocoga.OFFER_ICON_NORMAL, TypedValue.COMPLEX_UNIT_DIP, Mocoga.ICON_ALIGN_RIGHT_BOTTOM);
 		}
 		else if(tag.equals("tab3")) {
-			Mocoga.getInstance().hideOfferIcon();
+			Mocoga.getInstance().hideOfferCon();
 			Mocoga.getInstance().showOfferCon(MocogaClientActivity.this, 160, 160, Mocoga.OFFER_ICON_SMALL, TypedValue.COMPLEX_UNIT_DIP, Mocoga.ICON_ALIGN_LEFT_BOTTOM);
 		}
 		else if(tag.equals("tab4")) {
-			Mocoga.getInstance().hideOfferIcon();
+			Mocoga.getInstance().hideOfferCon();
 			Mocoga.getInstance().showOfferCon(MocogaClientActivity.this, 160, 160, offerConSize, TypedValue.COMPLEX_UNIT_DIP, Mocoga.ICON_ALIGN_LEFT_BOTTOM);
 		}
     	
