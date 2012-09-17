@@ -121,7 +121,8 @@ public class MocogaServerActivity extends TabActivity {
 	   	 * - Mocoga.getInstance().initAppID(getApplicationContext(), "Your App ID", "Your Secret Key");
 	   	 * - 주의! 현재 샘플 앱의 AppID와 SecretKey는 테스트용이므로, 실제 사용하려는 AppID와 SecretKey를 추가해주시기 바랍니다.
 	   	 */
-        Mocoga.getInstance().initAppID(getApplicationContext(), "3bbb5aa4-658a-4b79-9534-6578820f9a2e", "PYdfmx97PdzLwQ==");
+        //Mocoga.getInstance().initAppID(getApplicationContext(), "3bbb5aa4-658a-4b79-9534-6578820f9a2e", "PYdfmx97PdzLwQ==");
+        Mocoga.getInstance().initAppID(getApplicationContext(), "f14aeaab-6013-45f8-8993-fe0c524f880e", "/sP/tbUWvDgFdQ==");
 
         /*
     	 * << User ID 설정 >>
@@ -152,7 +153,6 @@ public class MocogaServerActivity extends TabActivity {
          * - 앱 종료시에는 반드시 Mocoga.getInstance().setListener(null)를 호출해서 등록한 listener를 해지해 주시기 바랍니다.
          */
         Mocoga.getInstance().setListener(mocogaListener);
-        
     }
     
     
