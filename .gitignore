@@ -12,3 +12,7 @@ MocogaServer/bin/
 MocogaServer/gen/
 
 MocogaServer/.DS_Store
+
+MocogaClient/.DS_Store
+
+.DS_Store
